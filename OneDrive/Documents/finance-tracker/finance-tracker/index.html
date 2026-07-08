@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en";
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Personal Finance Tracker</h1>
+    </header>
+
+    <main>
+        <!-- 2. Summary Section  (The 3 cards)----->
+         <section id="summary">
+            <div class="card">
+                <h3>Income</h3>
+                <p id="total-income">$0</p>
+            </div>
+
+            <div class="card">
+                <h3> Balance</h3>
+                <p id="total-balance">$0</p>
+            </div>
+         </section>
+
+         <!-- 3. Transaction- form -->
+        <section id="transaction-form">
+            <h2> Add New Transaction</h2>
+            <form>
+                <div>
+                    <label for="description">Description</label>
+                    <input type="text" id="description" placeholder="e.g Groceries, Salary" required>                   
+                </div>
+
+                <div>
+                    <label for="amount">Amount (₱)</label>
+                    <input type="number" id="amount" placeholder="0.00" required>
+                </div>
+
+                <div>
+                    <label for="type">Type</label>
+                    <select id="type">
+                        <option value="income">Income</option>
+                        <option value="expense">Expense</option>
+                    </select>
+                </div>
+
+                <button type="submit">Add Transaction</button>
+            </form>
+        </section>
+          <!-- 4. TRANSACTION LIST -->
+        <section id="transaction-list">
+            <h2>Transactions</h2>
+            <p id="empty-state">(No transactions yet)</p>
+            
+            <!-- This empty list is where our JavaScript will inject items later! -->
+            <ul id="transactions-container"></ul>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

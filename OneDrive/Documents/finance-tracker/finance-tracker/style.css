@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    padding: 20px;
+    /* Center the entire application container on the screen */
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Container to keep everything centered and neat */
+main {
+    width: 100%;
+    max-width: 600px;
+}
+
+/* REUSABLE SECTION BOX */
+section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+#summary {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    background: transparent;
+    padding: 0;
+    box-shadow: none;
+}
+
+.card {
+    background: #ffffff;
+    flex: 1;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+
+.card h3 {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.card p{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+/* TRANSACTION FORM STYLES */
+form div {
+    margin-bottom: 15px;
+}
+
+label { 
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color : #005bb3;
+}
+
+#empty-state {
+    color: #888;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
